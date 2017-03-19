@@ -29,6 +29,7 @@ export default [
   'https://addons-origin.cursecdn.com/files/2354/280/rftoolsctrl-1.1x-1.6.3.jar',
   'https://addons-origin.cursecdn.com/files/2312/494/EnderZoo-1.10-1.2.3.43.jar',
   'https://addons-origin.cursecdn.com/files/2355/274/EnderCore-1.10.2-0.4.1.61-beta.jar',
+  'https://addons-origin.cursecdn.com/files/2323/713/BetterSprinting%20%20MC-1.10.2%20%20v1.1.7.jar',
   'https://addons-origin.cursecdn.com/files/2356/26/compatlayer-1.10-0.1.4.jar',
   'https://addons-origin.cursecdn.com/files/2359/322/Reliquary-1.10.2-1.3.3.606.jar',
   'https://addons-origin.cursecdn.com/files/2389/363/exnihiloadscensio-1.10.2-0.1.17.jar',
