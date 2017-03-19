@@ -49,4 +49,5 @@ export default [
   'https://addons-origin.cursecdn.com/files/2389/5/StorageDrawers-1.10.2-3.6.1.jar',
   'https://addons-origin.cursecdn.com/files/2392/636/ae2stuff-0.6.0.9-mc1.10.2.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
+  'https://addons-origin.cursecdn.com/files/2386/793/valkyrielib-1.10.2-0.10.6.jar',
 ]
