@@ -45,4 +45,8 @@ export default [
   'https://addons-origin.cursecdn.com/files/2356/883/CodeChickenCore-1.10.2-2.4.0.100-universal.jar',
   'https://asie.pl/files/minecraft/foamfix-0.6.2-beta2-anarchy.jar',
   'https://addons-origin.cursecdn.com/files/2391/153/CoFHCore-1.10.2-4.1.0.155-universal.jar',
+  'https://addons-origin.cursecdn.com/files/2386/795/simplegenerators-1.10.2-0.10.6a.jar',
+  'https://addons-origin.cursecdn.com/files/2389/5/StorageDrawers-1.10.2-3.6.1.jar',
+  'https://addons-origin.cursecdn.com/files/2392/636/ae2stuff-0.6.0.9-mc1.10.2.jar',
+  'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
 ]
