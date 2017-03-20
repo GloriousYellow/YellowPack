@@ -50,4 +50,7 @@ export default [
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
   'https://addons-origin.cursecdn.com/files/2386/793/valkyrielib-1.10.2-0.10.6.jar',
   'https://addons-origin.cursecdn.com/files/2355/632/Chameleon-1.10-2.2.2.jar',
+  'https://addons-origin.cursecdn.com/files/2392/608/generators-0.9.20.23-mc1.10.2.jar',
+  'https://addons-origin.cursecdn.com/files/2392/611/pressure-1.3.1.25-mc1.10.2.jar',
+  'https://addons-origin.cursecdn.com/files/2392/598/bdlib-1.12.4.24-mc1.10.2.jar',
 ]
