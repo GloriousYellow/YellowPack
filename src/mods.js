@@ -7,7 +7,6 @@ export default [
   'https://addons-origin.cursecdn.com/files/2353/326/Mantle-1.10.2-1.1.3.jar',
   'http://chickenbones.net/maven/codechicken/CodeChickenLib/1.10.2-2.5.6.239/CodeChickenLib-1.10.2-2.5.6.239-universal.jar',
   'https://addons-origin.cursecdn.com/files/2353/329/TConstruct-1.10.2-2.6.1.jar',
-  'https://addons-origin.cursecdn.com/files/2359/908/ExtremeReactors-1.10.2-0.4.5.22.jar',
   'https://addons-origin.cursecdn.com/files/2347/456/BiomesOPlenty-1.10.2-5.0.0.2109-universal.jar',
   'https://addons-origin.cursecdn.com/files/2351/656/zerocore-1.10.2-0.0.8.2.jar',
   'https://addons-origin.cursecdn.com/files/2338/989/InventoryTweaks-1.62-dev-66.jar',
