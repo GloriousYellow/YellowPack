@@ -54,4 +54,6 @@ export default [
   'https://addons-origin.cursecdn.com/files/2392/611/pressure-1.3.1.25-mc1.10.2.jar',
   'https://addons-origin.cursecdn.com/files/2392/598/bdlib-1.12.4.24-mc1.10.2.jar',
   'https://addons-origin.cursecdn.com/files/2391/951/multihotbar-1.10.2-2.1.3-build-T49.jar',
+  'https://addons-origin.cursecdn.com/files/2361/752/dualhotbar-1.1x-1.7.2.jar',
+  'https://addons-origin.cursecdn.com/files/2318/159/FastLeafDecay-v11.jar',
 ]
