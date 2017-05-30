@@ -4,7 +4,8 @@
   "description": "A wide selection of mods",
   "main": "index.js",
   "scripts": {
-    "server:prepare": "gulp prepareServer && cd server && java -jar install.jar --installServer ",
+    "build": "gulp",
+    "server:prepare": "gulp prepareServer && cd server && java -jar install.jar --installServer",
     "server": "npm run server:prepare && mkdir -p server && echo eula=true > server/eula.txt && cd server && java -jar forge-1.10.2-12.18.3.2254-universal.jar nogui",
     "test": "eslint . && gulp prepareServer:test && echo stop | npm run server && gulp prepareServer:noCrash"
   },
@@ -28,7 +29,7 @@
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "fs-extra": "^1.0.0",
+    "fs-extra": "^3.0.1",
     "fs-extra-promise": "^0.4.1",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",
