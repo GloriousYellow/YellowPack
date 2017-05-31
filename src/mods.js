@@ -5,6 +5,7 @@ export default [
   'curseforge:thermalexpansion',
   'curseforge:222880-thermal-foundation',
   'curseforge:cofhcore',
+  'curseforge:233105-mcjtylib'
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
   'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/Mekanism-1.10.2-9.2.1.295.jar',
   'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/MekanismTools-1.10.2-9.2.1.295.jar',
@@ -29,7 +30,6 @@ export default [
   'https://addons-origin.cursecdn.com/files/2331/308/ironchest-1.10.2-7.0.11.797.jar',
   'https://addons-origin.cursecdn.com/files/2392/636/ae2stuff-0.6.0.9-mc1.10.2.jar',
   'https://addons-origin.cursecdn.com/files/2358/959/EnderIO-1.10.2-3.0.1.145_beta.jar',
-  'https://addons-origin.cursecdn.com/files/2352/866/mcjtylib-1.1x-2.3.1.jar',
   'https://addons-origin.cursecdn.com/files/2312/494/EnderZoo-1.10-1.2.3.43.jar',
   'https://addons-origin.cursecdn.com/files/2355/274/EnderCore-1.10.2-0.4.1.61-beta.jar',
   'https://addons-origin.cursecdn.com/files/2323/713/BetterSprinting%20%20MC-1.10.2%20%20v1.1.7.jar',
