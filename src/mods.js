@@ -7,7 +7,7 @@ export default [
   'curseforge:cofhcore',
   'curseforge:233105-mcjtylib',
   'curseforge:codechicken-lib-1-8',
-  'curseforge:codechicken-core-1-8'
+  'curseforge:codechicken-core-1-8',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
   'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/Mekanism-1.10.2-9.2.1.295.jar',
   'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/MekanismTools-1.10.2-9.2.1.295.jar',
