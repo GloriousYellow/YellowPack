@@ -43,7 +43,19 @@ gulp.task('default', async () => {
     await downloadFile(mod, `dist/mods/mod-${index}.${mod.split('?')[0].split('.').pop()}`)
     util.log(`Downloaded mod from ${chalk.magenta(mod)}`)
   }
-  for (const mod of mods) {
+  for (let mod of mods) {
+    if (mod.startsWith('curseforge:')) {
+      mod = mod.slice(11)
+      const modData = await rp({
+        url: `https://widget.mcf.li/mc-mods/minecraft/${mod}.json`,
+        json: true,
+      })
+      const version = modData.versions['1.10.2'][0]
+      const versionId = version.id.toString()
+      const splitId = [versionId.slice(0, -3), versionId.slice(4)]
+      const url = `https://addons-origin.cursecdn.com/files/${splitId[0]}/${splitId[1]}/${version.name}`
+      mod = url
+    }
     promises.push(downloadMod(mod, i))
     i += 1
   }
@@ -93,4 +105,3 @@ gulp.task('prepareServer:noCrash', async () => {
   }
 })
 
-export default null
