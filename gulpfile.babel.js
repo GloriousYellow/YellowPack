@@ -3,7 +3,7 @@ import 'babel-polyfill'
 import gulp from 'gulp'
 import request from 'request'
 import rp from 'request-promise'
-import fs from 'fs-extra-promise'
+import fs from 'fs-extra'
 import util from 'gulp-util'
 import streamToPromise from 'stream-to-promise'
 import chalk from 'chalk'
@@ -20,7 +20,7 @@ function downloadFile(url, path) {
 
 const exists = async function exists(path) {
   try {
-    await fs.accessAsync(path)
+    await fs.access(path)
     return true
   } catch (e) {
     return false
@@ -31,18 +31,37 @@ const forgeUri = 'http://files.minecraftforge.net/maven/net/minecraftforge/forge
 const serverUri = 'https://launcher.mojang.com/mc/game/1.10.2/server/3d501b23df53c548254f5e3f66492d178a48db63/server.jar'
 
 gulp.task('default', async () => {
-  await fs.emptyDirAsync('dist')
-  await fs.ensureDirAsync('dist/mods')
-  await fs.ensureDirAsync('dist/config')
-  await fs.ensureDirAsync('dist/bin')
+  await fs.emptyDir('dist')
+  await fs.ensureDir('dist/mods')
+  await fs.ensureDir('dist/config')
+  await fs.ensureDir('dist/bin')
 
   let i = 1
 
-  for (const mod of mods) {
-    await downloadFile(mod, `dist/mods/mod-${i}.${mod.split('?')[0].split('.').pop()}`)
+  const promises = []
+  async function downloadMod(mod, index) {
+    await downloadFile(mod, `dist/mods/mod-${index}.${mod.split('?')[0].split('.').pop()}`)
     util.log(`Downloaded mod from ${chalk.magenta(mod)}`)
+  }
+  for (let mod of mods) {
+    if (mod.startsWith('curseforge:')) {
+      mod = mod.slice(11)
+      const modData = await rp({
+        url: `https://widget.mcf.li/mc-mods/minecraft/${mod}.json`,
+        json: true,
+      })
+      const version = modData.versions['1.10.2'][0]
+      const versionId = version.id.toString()
+      const splitId = [versionId.slice(0, -3), versionId.slice(4)]
+      const url = `https://addons-origin.cursecdn.com/files/${splitId[0]}/${splitId[1]}/${version.name}`
+      mod = url
+    }
+    promises.push(downloadMod(mod, i))
     i += 1
   }
+  await Promise.all(promises)
+
+  util.log('Downloading OptiFine and liteloader')
 
   // Special case for OptiFine
   const $ = cheerio.load(await rp('http://optifine.net/adloadx?f=OptiFine_1.10.2_HD_U_D4.jar'))
@@ -53,7 +72,7 @@ gulp.task('default', async () => {
   await downloadFile(liteloaderUrl, 'dist/mods/liteloader.jar')
 
   util.log(`Copying config from ${chalk.magenta('src/mods-config')} to ${chalk.magenta('dist/config')}`)
-  await fs.copyAsync('src/mods-config', 'dist/config')
+  await fs.copy('src/mods-config', 'dist/config')
 
   util.log('Downloading forge')
   await downloadFile(forgeUri, 'dist/bin/modpack.jar')
@@ -61,15 +80,15 @@ gulp.task('default', async () => {
   util.log(`Successfully downloaded forge to ${chalk.magenta('dist/bin/modpack.jar')}`)
 })
 
-gulp.task('clean', () => fs.emptyDirAsync('dist'))
+gulp.task('clean', () => fs.emptyDir('dist'))
 
 gulp.task('prepareServer', ['default'], async () => {
-  await fs.ensureDirAsync('server')
-  await fs.emptyDirAsync('server/mods')
-  await fs.emptyDirAsync('server/config')
-  await fs.copyAsync('dist/mods', 'server/mods')
-  await fs.copyAsync('dist/config', 'server/config')
-  await fs.unlinkAsync('server/mods/liteloader.jar')
+  await fs.ensureDir('server')
+  await fs.emptyDir('server/mods')
+  await fs.emptyDir('server/config')
+  await fs.copy('dist/mods', 'server/mods')
+  await fs.copy('dist/config', 'server/config')
+  await fs.unlink('server/mods/liteloader.jar')
   util.log(`Successfully downloaded forge server to ${chalk.magenta('server/installer.jar')}`)
   await downloadFile('http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.3.2254/forge-1.10.2-12.18.3.2254-installer.jar', 'server/install.jar')
 })
@@ -86,4 +105,3 @@ gulp.task('prepareServer:noCrash', async () => {
   }
 })
 
-export default null
