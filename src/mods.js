@@ -6,6 +6,7 @@ export default [
   'curseforge:222880-thermal-foundation',
   'curseforge:cofhcore',
   'curseforge:233105-mcjtylib',
+  'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
   'https://addons-origin.cursecdn.com/files/2367/98/CodeChickenCore-1.10.2-2.4.0.101-universal.jar',
   'https://addons-origin.cursecdn.com/files/2396/107/CodeChickenLib-1.10.2-2.5.7.241-universal.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
