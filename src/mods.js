@@ -11,8 +11,6 @@ export default [
   'https://addons-origin.cursecdn.com/files/2367/98/CodeChickenCore-1.10.2-2.4.0.101-universal.jar',
   'https://addons-origin.cursecdn.com/files/2396/107/CodeChickenLib-1.10.2-2.5.7.241-universal.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
-  'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/Mekanism-1.10.2-9.2.1.295.jar',
-  'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/MekanismTools-1.10.2-9.2.1.295.jar',
   'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar',
   'https://addons-origin.cursecdn.com/files/2350/460/chiselsandbits-12.8.jar',
   'https://addons-origin.cursecdn.com/files/2357/416/jei_1.10.2-3.13.6.392.jar',
