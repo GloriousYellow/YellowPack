@@ -16,6 +16,7 @@ export default [
   'curseforge:250850-tiny-progressions',
   'curseforge:229380-inventory-pets',
   'curseforge:235595-not-enough-wands',
+  'curseforge:236484-chunk-animator',
   'curseforge:252130-charge-pads',
   'curseforge:250711-limelib',
   'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
