@@ -16,6 +16,8 @@ export default [
   'curseforge:250850-tiny-progressions',
   'curseforge:229380-inventory-pets',
   'curseforge:235595-not-enough-wands',
+  'curseforge:252130-charge-pads',
+  'curseforge:250711-limelib',
   'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
   'https://addons-origin.cursecdn.com/files/2367/98/CodeChickenCore-1.10.2-2.4.0.101-universal.jar',
   'https://addons-origin.cursecdn.com/files/2396/107/CodeChickenLib-1.10.2-2.5.7.241-universal.jar',
