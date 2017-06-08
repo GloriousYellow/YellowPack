@@ -53,7 +53,10 @@ gulp.task('default', async () => {
       const version = modData.versions['1.10.2'][0]
       const versionId = version.id.toString()
       const splitId = [versionId.slice(0, -3), versionId.slice(4)]
-      const url = `https://addons-origin.cursecdn.com/files/${splitId[0]}/${splitId[1]}/${version.name}`
+      let url = `https://addons-origin.cursecdn.com/files/${splitId[0]}/${splitId[1]}/${version.name}`
+      if (!url.endsWith('.jar')) {
+        url += '.jar'
+      }
       mod = url
     }
     promises.push(downloadMod(mod, i))
