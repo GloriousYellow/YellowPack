@@ -85,6 +85,8 @@ gulp.task('clean', () => fs.emptyDir('dist'))
 gulp.task('prepareServer', ['default'], async () => {
   await fs.ensureDir('server')
   await fs.emptyDir('server/mods')
+  await fs.emptyDir('server/world/scripts')
+  await fs.copy('src/crafttweaker', 'server/world/scripts')
   await fs.copy('dist/mods', 'server/mods')
   await fs.copy('dist/config', 'server/config')
   await fs.unlink('server/mods/liteloader.jar')
