@@ -23,6 +23,7 @@ export default [
   'curseforge:238123-stimmedcow-nomorerecipeconflict',
   'curseforge:238222-just-enough-items-jei',
   'curseforge:242818-codechicken-lib-1-8',
+  'curseforge:227443-thermal-dynamics',
   'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
   'https://addons-origin.cursecdn.com/files/2367/98/CodeChickenCore-1.10.2-2.4.0.101-universal.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
