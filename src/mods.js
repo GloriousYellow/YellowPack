@@ -23,7 +23,7 @@ export default [
   'curseforge:238123-stimmedcow-nomorerecipeconflict',
   'curseforge:238222-just-enough-items-jei',
   'curseforge:243822-codechicken-core-1-8',
-  'curseforge:229316-chickenchunks',
+  'curseforge:243883-chicken-chunks-1-8',
   'https://addons-origin.cursecdn.com/files/2429/883/CodeChickenLib-1.10.2-2.5.9.267-universal.jar',
   'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
