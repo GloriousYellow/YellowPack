@@ -5,17 +5,23 @@ import request from 'request'
 import rp from 'request-promise'
 import fs from 'fs-extra'
 import util from 'gulp-util'
-import streamToPromise from 'stream-to-promise'
 import chalk from 'chalk'
 import cheerio from 'cheerio'
 
 import mods from './src/mods'
 
 function downloadFile(url, path) {
-  const src = request(url)
-  const dest = fs.createWriteStream(path)
-  src.pipe(dest)
-  return streamToPromise(src)
+  return new Promise((resolve, reject) => {
+    const src = request(url)
+    src.on('response', (response) => {
+      if (response.statusCode !== 200) {
+        reject('Status code not 200')
+      }
+      const dest = fs.createWriteStream(path)
+      src.pipe(dest)
+      src.on('end', resolve)
+    })
+  })
 }
 
 const exists = async function exists(path) {
@@ -51,9 +57,15 @@ gulp.task('default', async () => {
         json: true,
       })
       const version = modData.versions['1.10.2'][0]
-      const versionId = version.id.toString()
-      const splitId = [versionId.slice(0, -3), versionId.slice(4)]
-      const url = `https://addons-origin.cursecdn.com/files/${splitId[0]}/${splitId[1]}/${version.name}`
+      const $ = cheerio.load(await rp(version.url))
+      let url = $('.countdown')
+        .find('p')
+        .eq(0)
+        .find('a')
+        .data('href')
+      if (!url.endsWith('.jar')) {
+        url += '.jar'
+      }
       mod = url
     }
     promises.push(downloadMod(mod, i))
