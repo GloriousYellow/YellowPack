@@ -5,6 +5,7 @@ before_script:
   - npm install -g gulp-cli
 script:
   - npm test
+cache: yarn
 addons:
   apt:
     packages:
