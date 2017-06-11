@@ -3,6 +3,7 @@ node_js:
   - "node"
 script:
   - npm test
+cache: yarn
 addons:
   apt:
     packages:
