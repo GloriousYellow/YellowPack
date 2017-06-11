@@ -63,10 +63,6 @@ gulp.task('default', async () => {
         .eq(0)
         .find('a')
         .data('href')
-
-      const versionId = version.id.toString()
-      const splitId = [versionId.slice(0, -3), versionId.slice(4)]
-      let url = `https://addons-origin.cursecdn.com/files/${splitId[0]}/${splitId[1]}/${version.name}`
       if (!url.endsWith('.jar')) {
         url += '.jar'
       }
