@@ -26,6 +26,7 @@ export default [
   'curseforge:227443-thermal-dynamics',
   'curseforge:243822-codechicken-core-1-8',
   'curseforge:243883-chicken-chunks-1-8',
+  'curseforge:226294-minetweaker-recipemaker',
   'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
   'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar',
