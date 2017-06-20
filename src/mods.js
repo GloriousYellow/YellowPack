@@ -30,6 +30,7 @@ export default [
   'curseforge:226294-minetweaker-recipemaker',
   'curseforge:238403-better-builders-wands',
   'curseforge:243436-craftable-name-tags',
+  'curseforge:246974-solar-flux-reborn',
   'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
   'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar',
