@@ -36,6 +36,8 @@ export default [
   'curseforge:231382-brandons-core',
   'curseforge:250277-extreme-reactors',
   'curseforge:247921-zerocore',
+  'curseforge:255232-p455w0rds-library',
+  'curseforge:244559-wireless-crafting-terminal',
   'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
   'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar',
