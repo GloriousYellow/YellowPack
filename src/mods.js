@@ -34,6 +34,7 @@ export default [
   'curseforge:247401-hammer-core',
   'curseforge:223565-draconic-evolution',
   'curseforge:231382-brandons-core',
+  'curseforge:250277-extreme-reactors',
   'https://addons-origin.cursecdn.com/files/2426/967/Blur-1.0.1-9.jar',
   'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
   'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar',
