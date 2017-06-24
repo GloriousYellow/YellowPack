@@ -13,7 +13,6 @@ export default [
   'curseforge:244049-woot',
   'curseforge:redstone-arsenal',
   'curseforge:252354-open-glider',
-  'curseforge:250850-tiny-progressions',
   'curseforge:229380-inventory-pets',
   'curseforge:235595-not-enough-wands',
   'curseforge:236484-chunk-animator',
